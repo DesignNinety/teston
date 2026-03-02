@@ -5,6 +5,7 @@ import re
 import asyncio
 from datetime import datetime
 from typing import Optional, List
+from myserver import server_on
 
 import aiohttp
 import discord
@@ -191,4 +192,5 @@ async def main():
         await bot.start(DISCORD_TOKEN)
 
 if __name__ == "__main__":
+    server_on()
     asyncio.run(main())
